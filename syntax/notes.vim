@@ -58,9 +58,9 @@ highlight def link notesDoubleQuoted String
 
 " Highlight inline code fragments (same as Markdown syntax). {{{2
 if has('conceal') && xolox#misc#option#get('notes_conceal_code', 1)
-  syntax region notesInlineCode matchgroup=notesInlineCodeMarker start=/`/ end=/`/ concealends
-  highlight link notesItalicMarker notesInlineCodeMarker
-else
+"  syntax region notesInlineCode matchgroup=notesInlineCodeMarker start=/`/ end=/`/ concealends
+"  highlight link notesItalicMarker notesInlineCodeMarker
+"else
   syntax match notesInlineCode /`[^`]*`/
 endif
 syntax cluster notesInline add=notesInlineCode
