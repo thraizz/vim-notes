@@ -1,0 +1,5 @@
+vim
+
+Drop from buffer
+`:bd <number of buffer>`
+
